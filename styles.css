@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Chinese Rocks RG';
+    src: url('fonts/rdr2.ttf') format('truetype'); /* Ajustado o formato para truetype */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Chinese Rocks RG', Arial, sans-serif; /* Altere aqui */
+    transition: opacity 0.5s;
+    opacity: 0; /* Oculta o conteúdo até que o carregamento termine */
+}
+
+.company-logo {
+    width: 30px; /* Ajuste o tamanho da logo da empresa */
+    height: auto; /* Mantém a proporção da imagem */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 5px; /* Espaço à esquerda */
+}
+
+.age-rating {
+    width: 30px; /* Ajuste o tamanho do ícone de faixa etária */
+    height: auto; /* Mantém a proporção da imagem */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 5px; /* Espaço à esquerda */
+}
+
+/* Resto do seu CSS permanece inalterado */
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.cover {
+    position: relative;
+    height: 400px; /* Ajuste conforme necessário */
+    overflow: hidden;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cobrir todo o espaço disponível */
+}
+
+.cover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.carousel {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-slide iframe {
+    width: 100%;
+    height: 315px; /* Ajuste a altura do trailer */
+    border-radius: 10px;
+}
+
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 5px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.details, .summary, .reviews, .purchase {
+    padding: 20px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.summary-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 0 auto; /* Centraliza o cartão de resumo */
+    max-width: 600px; /* Define uma largura máxima */
+}
+
+.purchase {
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Margem em cima e embaixo da seção */
+    color: rgb(0, 255, 55);
+}
+
+.purchase-links {
+    display: flex; /* Usar Flexbox para alinhamento */
+    justify-content: center; /* Centraliza as logos horizontalmente */
+    gap: 20px; /* Espaçamento entre as logos */
+}
+
+.purchase-links a img {
+    max-width: 100px; /* Define um tamanho máximo para as logos */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}

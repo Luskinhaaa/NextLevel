@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dead Redemption 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png"> <!-- Logo do site -->
+</head>
+
+<body>
+    <div id="loading">Carregando...</div> <!-- Loading -->
+
+    <header>
+        <h1>Red Dead Redemption 2</h1>
+        <p>Uma experiência épica no Velho Oeste da Rockstar Games.</p>
+    </header>
+
+    <!-- Capa do Jogo -->
+    <section class="cover">
+        <img src="capagrande.jpg" alt="Capa do Red Dead Redemption 2">
+    </section>
+
+    <!-- Carrossel de Imagens -->
+    <section class="carousel">
+        <h2>Galeria de Imagens</h2>
+        <div class="carousel-container">
+            <button class="prev" aria-label="Imagem anterior">&#10094;</button>
+            <div class="carousel-images">
+                <div class="carousel-slide">
+                    <img src="capagrande.jpg" alt="Red Dead Redemption 2 Image 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="arthuratirando.webp" alt="Red Dead Redemption 2 Image 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="pordosol.jpg" alt="Red Dead Redemption 2 Image 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="bang.jpg" alt="Red Dead Redemption 2 Image 4">
+                </div>
+                <div class="carousel-slide">
+                    <iframe src="https://www.youtube.com/embed/eaW0tYpxyp0" frameborder="0" allowfullscreen title="Trailer do jogo"></iframe>
+                </div>
+            </div>
+            <button class="next" aria-label="Próxima imagem">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Detalhes do Jogo -->
+<section class="details">
+    <h2>Detalhes do Jogo</h2>
+    <ul>
+        <li>Desenvolvedora: <img src="rock.png" alt="Logo da Empresa" class="company-logo"></li> <!-- Adicione a logo da empresa aqui -->
+        <li>Data de Lançamento: 26 de outubro de 2018</li>
+        <li>Plataformas: PS4, Xbox One, PC</li>
+        <li>Gênero: Ação, Aventura</li>
+        <li>Classificação: <img src="18.png" alt="Faixa Etária" class="age-rating"></li> <!-- Adicione o ícone da faixa etária aqui -->
+        <li>MetaCritic: 97 ✅</li>
+    </ul>
+</section>
+
+
+    <!-- Resumo do Jogo -->
+    <section class="summary">
+        <h2>Resumo</h2>
+        <div class="summary-card">
+            <p>Red Dead Redemption 2 é uma prequel do aclamado jogo da Rockstar Games, ambientado em um mundo aberto rico em detalhes e histórias. O jogador assume o papel de Arthur Morgan, membro da gangue Van der Linde, navegando pelas tensões do Velho Oeste enquanto a civilização avança e as leis mudam.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Reviews -->
+    <section class="reviews">
+        <h2>Avaliações</h2>
+        <div class="review">
+            <h3>Nota dos Jogadores</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"Uma obra-prima do Velho Oeste. Cada detalhe é meticulosamente trabalhado para oferecer uma experiência única!"</p>
+        </div>
+        <div class="review">
+            <h3>Crítica Especializada</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"RDR2 é mais do que um jogo, é uma experiência cinematográfica imersiva."</p>
+        </div>
+    </section>
+
+    <!-- Links de Compra -->
+    <section class="purchase">
+        <h2>Adquira o jogo aqui</h2>
+        <div class="purchase-links">
+            <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank" rel="noopener noreferrer">
+                <img src="Steam_logo.png" alt="Steam Logo">
+            </a>
+            <a href="https://store.playstation.com/pt-br/product/UP1004-CUSA03041_00-REDEMPTIONFULL00" target="_blank" rel="noopener noreferrer">
+                <img src="playstation-store-logo-1.png" alt="PlayStation Logo">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 NextLevel</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Carregar conteúdo após 2 segundos
+        setTimeout(() => {
+            document.getElementById('loading').style.display = 'none'; // Esconde o loading
+            document.body.style.opacity = 1; // Torna o conteúdo visível
+        }, 2000);
+    </script>
+</body>
+
+</html>
