@@ -105,7 +105,7 @@ header {
 }
 
 .carousel-slide img {
-    max-width: 100%; /* Imagem se ajusta ao tamanho do slide */
+    max-width: 100%; /* A imagem se ajusta ao tamanho do slide */
     height: auto; /* Mantém a proporção da imagem */
 }
 
@@ -121,7 +121,10 @@ button.next {
     transform: translateY(-50%); /* Centraliza verticalmente */
 }
 
-.details, .summary, .reviews, .purchase {
+.details,
+.summary,
+.reviews,
+.purchase {
     padding: 20px;
     text-align: center; /* Centraliza o texto */
 }
