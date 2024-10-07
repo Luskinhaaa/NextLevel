@@ -142,7 +142,7 @@ button.next {
 }
 
 .purchase-links a img {
-    max-width: 100px; /* Define um tamanho máximo para as logos */
+    max-width: 70px; /* Define um tamanho máximo para as logos */
     height: auto; /* Mantém a proporção da imagem */
 }
 
