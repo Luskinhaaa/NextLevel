@@ -60,60 +60,39 @@ header {
     text-align: center;
     padding: 20px;
 }
-
 .carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
+    position: relative; /* Necessário para o posicionamento absoluto dos botões */
+    display: flex; /* Usar flexbox para o layout */
+    align-items: center; /* Alinha os itens verticalmente no centro */
 }
 
 .carousel-images {
-    display: flex;
-    width: 500%;
-    transition: transform 0.5s ease;
+    flex: 1; /* Permite que a área das imagens ocupe todo o espaço restante */
+    display: flex; /* Necessário para o layout de slides em linha */
+    overflow: hidden; /* Esconde imagens fora da área visível */
 }
 
 .carousel-slide {
-    min-width: 100%;
-    box-sizing: border-box;
+    display: none; /* Inicialmente, oculta todos os slides */
+    flex: none; /* Impede que o slide cresça */
+    justify-content: center; /* Centraliza o conteúdo do slide */
 }
 
 .carousel-slide img {
-    width: 100%;
-    border-radius: 10px;
+    max-width: 100%; /* Imagem se ajusta ao tamanho do slide */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-.carousel-slide iframe {
-    width: 100%;
-    height: 315px; /* Ajuste a altura do trailer */
-    border-radius: 10px;
-}
-
-button.prev, button.next {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    font-size: 2em;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    border-radius: 5px;
-}
-
-button.prev {
-    left: 10px;
-}
-
+button.prev,
 button.next {
-    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para os botões */
+    color: white; /* Cor do texto */
+    border: none; /* Remove bordas */
+    padding: 10px; /* Espaçamento interno */
+    cursor: pointer; /* Indica que é clicável */
+    position: absolute; /* Permite posicionar os botões */
+    top: 50%; /* Posiciona na metade da altura do carrossel */
+    transform: translateY(-50%); /* Centraliza verticalmente */
 }
 
 .details, .summary, .reviews, .purchase {
