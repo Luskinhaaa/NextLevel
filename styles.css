@@ -3,6 +3,40 @@
     src: url('fonts/rdr2.ttf') format('truetype'); /* Ajustado o formato para truetype */
 }
 
+/* Estilos para o carregador moderno */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Certifique-se de que o loading fique acima do conteúdo */
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.3); /* Cor da borda externa */
+    border-top: 8px solid white; /* Cor da borda superior para o efeito de movimento */
+    border-radius: 50%; /* Forma circular */
+    width: 60px; /* Largura do círculo */
+    height: 60px; /* Altura do círculo */
+    animation: spin 1s linear infinite; /* Animação de rotação */
+}
+
+/* Animação de rotação */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 body {
     margin: 0;
     padding: 0;
